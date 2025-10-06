@@ -20,7 +20,7 @@ public class Payment {
     @Override
     public String toString() {
         return "Hours: " + hours + "\n" +
-                "Rate: $" + rate + "/h\n" +
+                "Rate: $" + rate + "/hr\n" +
                 "Total Pay: $" + String.format("%.2f", totalPay) + "\n" +
                 "Tax: $" + String.format("%.2f", tax) + "\n" +
                 "Final Pay: $" + String.format("%.2f", totalPay-tax);
