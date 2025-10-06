@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="90dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,7 +24,7 @@
         android:id="@+id/workedHours"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Hours Worked"
+        android:hint="Input total hours worked (including overtime)"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +35,7 @@
         android:id="@+id/hourRate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Hourly Rate"
+        android:hint="Input hourly payrate"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@id/workedHours"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,6 +59,7 @@
         android:textSize="16sp"
         android:padding="16dp"
         android:background="#F0F0F0"
+        android:text="The calculations appear here."
         app:layout_constraintTop_toBottomOf="@id/calcButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
