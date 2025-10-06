@@ -1,6 +1,9 @@
 package com.example.assignment1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -84,6 +87,22 @@ public class MainActivity extends AppCompatActivity {
         paymentList.add(payment);
 
         Toast.makeText(this, "Payment calculated successfully, view in Details page.", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.paymentMenu) {
+            Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
