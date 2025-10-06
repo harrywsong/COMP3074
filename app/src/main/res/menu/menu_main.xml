@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/paymentMenu"
-        android:title="View Payment History"
+        android:title="View History"
         app:showAsAction="ifRoom" />
 
 </menu>

@@ -13,6 +13,7 @@
         android:theme="@style/Theme.Assignment1">
         <activity
             android:name=".MainActivity"
+            android:label="Payment Calculator"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +23,7 @@
         </activity>
         <activity
             android:name=".DetailActivity"
+            android:label="Calculation History/Details"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
