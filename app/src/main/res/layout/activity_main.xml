@@ -19,4 +19,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
+    <EditText
+        android:id="@+id/workedHours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Hours Worked"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/hourRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Hourly Rate"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/workedHours"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
