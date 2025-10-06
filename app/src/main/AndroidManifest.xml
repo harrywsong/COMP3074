@@ -11,24 +11,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
+
         <activity
-            android:name=".MainActivity"
-            android:label="Payment Calculator"
+            android:name=".MenuActivity"
+            android:label="Main Menu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".DetailActivity"
-            android:label="Calculation History/Details"
+            android:name=".MainActivity"
+            android:label="Payment Calculator"
             android:exported="false"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MenuActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".MenuActivity" />
+        </activity>
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="Calculation History"
+            android:exported="false"
+            android:parentActivityName=".MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuActivity" />
         </activity>
     </application>
 
